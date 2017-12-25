@@ -1,8 +1,8 @@
-#!/bin/ksh
+#!/bin/sh
 
 for i in /usr/lib/smlnj /usr/lib32/smlnj /usr/sup/smlnj-110.74
 do
-  if [[ -r $i/bin/.arch-n-opsys ]]; then
+  if [ -r $i/bin/.arch-n-opsys ]; then
     echo $i
     exit 0
   fi
